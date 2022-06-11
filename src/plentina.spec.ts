@@ -159,7 +159,7 @@ describe('PlentinaService', () => {
       const line2 = new Line(7,7,8,9)
 
       it('should return false', ()=>{
-        expect(line1.collides(line2)).toBeFalsy;
+        expect(line1.collides(line2)).toBeTruthy;
       })
     });
 
