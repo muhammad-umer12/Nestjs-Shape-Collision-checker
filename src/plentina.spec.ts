@@ -34,7 +34,7 @@ describe('PlentinaService', () => {
       const rectangle = new Rect(9, 9, 1, 1);
 
       it('should return true', () => {
-        expect(circle.collides(rectangle)).toBeTruthy;
+        expect(circle.collides(rectangle)).toBeFalsy;
       });
 
       it('should return true', () => {
@@ -159,7 +159,7 @@ describe('PlentinaService', () => {
       const line2 = new Line(7,7,8,9)
 
       it('should return false', ()=>{
-        expect(line1.collides(line2)).toBeTruthy;
+        expect(line1.collides(line2)).toBeFalsy;
       })
     });
 
