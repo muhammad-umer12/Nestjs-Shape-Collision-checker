@@ -30,7 +30,7 @@ export class PlentinaController {
   @Get()
   healthCheck(@Res({ passthrough: true }) res: Response): any {
     try {
-      console.log(res)
+      
       res.status(HttpStatus.OK);
       return { name: this.plentinaService.healthCheck() };
     } catch (e) {

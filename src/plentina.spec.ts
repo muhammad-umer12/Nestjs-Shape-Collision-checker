@@ -32,9 +32,9 @@ describe('PlentinaService', () => {
 
     describe('a colliding circle and rectangle', () => {
       const rectangle = new Rect(9, 9, 1, 1);
-
+      console.log(circle.collides(rectangle));
       it('should return true', () => {
-        expect(circle.collides(rectangle)).toBeTruthy;
+        expect(circle.collides(rectangle)).toBeGreaterThan(5);
       });
 
       it('should return true', () => {
